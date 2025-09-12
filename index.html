@@ -4,151 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DisneyWorld Adventures - Tu Blog de Viajes a Disney</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <span class="logo-icon">🏰</span>
-                <h1>DisneyWorld Adventures</h1>
-            </div>
-            
-            <div class="search-container">
-                <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Buscar artículos...">
-                    <button id="search-btn">🔍</button>
-                </div>
-            </div>
-            
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Categorías</a></li>
-                    <li><a href="#">Galería</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <div class="container">
-        <main class="articles">
-            <article class="article" data-id="1">
-                <img src="https://via.placeholder.com/800x400?text=Magic+Kingdom" alt="Magic Kingdom" class="article-img">
-                <div class="article-content">
-                    <div class="article-meta">
-                        <span class="article-category">Parques Temáticos</span>
-                        <span class="article-date">15 Oct, 2023</span>
-                    </div>
-                    <h2>Guía Completa para Magic Kingdom: Consejos y Atracciones Imprescindibles</h2>
-                    <p>Magic Kingdom es el parque más emblemático de DisneyWorld. Con su icónico castillo de Cenicienta como centro, este parque te transporta a un mundo de fantasía y diversión. En esta guía te contamos todo lo que necesitas saber para aprovechar al máximo tu visita...</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </div>
-                
-                <div class="comments">
-                    <h3>Comentarios</h3>
-                    <form class="comment-form" data-article="1">
-                        <div class="form-group">
-                            <label for="comment-name">Nombre</label>
-                            <input type="text" id="comment-name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="comment-text">Comentario</label>
-                            <textarea id="comment-text" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Publicar comentario</button>
-                    </form>
-                    
-                    <ul class="comment-list" id="comments-1">
-                        <li class="comment">
-                            <div class="comment-header">
-                                <span class="comment-author">María González</span>
-                                <span class="comment-date">16 Oct, 2023</span>
-                            </div>
-                            <p>¡Excelente guía! Me ayudó muchísimo para planificar mi visita la semana pasada. Las recomendaciones para evitar las filas fueron especialmente útiles.</p>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-            
-            <article class="article" data-id="2">
-                <img src="https://via.placeholder.com/800x400?text=Epcot+Food" alt="Epcot Food" class="article-img">
-                <div class="article-content">
-                    <div class="article-meta">
-                        <span class="article-category">Gastronomía</span>
-                        <span class="article-date">10 Oct, 2023</span>
-                    </div>
-                    <h2>Tour Gastronómico por el Festival Internacional de Epcot</h2>
-                    <p>El Festival Internacional de Artes y Festival de la Comida de Epcot es uno de los eventos más esperados por los amantes de la buena comida. Durante este festival, los pabellones de World Showcase se llenan de puestos de comida con delicias de todo el mundo...</p>
-                    <a href="#" class="read-more">Leer más</a>
-                </div>
-                
-                <div class="comments">
-                    <h3>Comentarios</h3>
-                    <form class="comment-form" data-article="2">
-                        <div class="form-group">
-                            <label for="comment-name-2">Nombre</label>
-                            <input type="text" id="comment-name-2" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="comment-text-2">Comentario</label>
-                            <textarea id="comment-text-2" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Publicar comentario</button>
-                    </form>
-                    
-                    <ul class="comment-list" id="comments-2">
-                        <li class="comment">
-                            <div class="comment-header">
-                                <span class="comment-author">Carlos Ruiz</span>
-                                <span class="comment-date">12 Oct, 2023</span>
-                            </div>
-                            <p>¡Qué recuerdos! El pastel de frutas de Noruega es mi favorito. Recomiendo también probar el filete de Canadá, ¡estaba delicioso!</p>
-                        </li>
-                    </ul>
-                </div>
-            </article>
-        </main>
+     <nav class="navbar">
+        <a href="#" class="logo">
+            <i class="fas fa-hat-wizard"></i>
+            <span>Magic Disney</span>
+        </a>
         
-        <aside class="sidebar">
-            <h3>Categorías</h3>
-            <ul class="categories">
-                <li><a href="#">Parques Temáticos</a></li>
-                <li><a href="#">Atracciones</a></li>
-                <li><a href="#">Gastronomía</a></li>
-                <li><a href="#">Alojamiento</a></li>
-                <li><a href="#">Consejos de Viaje</a></li>
-                <li><a href="#">Eventos Especiales</a></li>
-            </ul>
-            
-            <h3>Artículos Populares</h3>
-            <div class="popular-articles">
-                <div class="article-preview">
-                    <h4><a href="#">Cómo maximizar el uso de Genie+ y Lightning Lane</a></h4>
-                    <p>5 Oct, 2023</p>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Entradas</a></li>
+            <li><a href="#">Imágenes</a></li>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Descubre la Magia de DisneyWorld</h1>
+            <p>Tu guía definitiva para planificar el viaje soñado al mundo mágico de Disney</p>
+            <a href="#" class="btn btn-primary">Explorar Artículos</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Articles Section -->
+        <section>
+            <h2 class="section-title">Últimas Entradas</h2>
+            <div class="articles">
+                <article class="article">
+                    <img src="https://images.unsplash.com/photo-1562976540-1502c2145186?ixlib=rb-4.0.3" alt="Magic Kingdom" class="article-img">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 15 Oct, 2023</span>
+                            <span><i class="far fa-folder"></i> Parques</span>
+                        </div>
+                        <h3>Guía Completa para Magic Kingdom</h3>
+                        <p>Descubre todos los secretos del parque más emblemático de DisneyWorld y aprovecha al máximo tu visita.</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="article">
+                    <img src="https://images.unsplash.com/photo-1541818963590-9d0ca11f9da5?ixlib=rb-4.0.3" alt="Epcot" class="article-img">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 12 Oct, 2023</span>
+                            <span><i class="far fa-folder"></i> Gastronomía</span>
+                        </div>
+                        <h3>Tour Gastronómico por Epcot</h3>
+                        <p>Deléitate con los sabores del mundo en el Festival Internacional de Artes y Comida de Epcot.</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="article">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3" alt="Star Wars" class="article-img">
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <span><i class="far fa-calendar"></i> 8 Oct, 2023</span>
+                            <span><i class="far fa-folder"></i> Experiencias</span>
+                        </div>
+                        <h3>Galaxy's Edge: Una Experiencia Estelar</h3>
+                        <p>Sumérgete en la galaxia de Star Wars en el increíble land de Disney's Hollywood Studios.</p>
+                        <a href="#" class="read-more">Leer más <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h2 class="section-title">Galería de Fotos</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1511994224542-3bd3c4fb2fd5?ixlib=rb-4.0.3" alt="Disney Castle">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-158997462926-71fde8d1bf2f?ixlib=rb-4.0.3" alt="Disney Parade">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?ixlib=rb-4.0.3" alt="Fireworks">
+                    </div>
                 </div>
-                <div class="article-preview">
-                    <h4><a href="#">Los mejores restaurantes para niños en DisneyWorld</a></h4>
-                    <p>28 Sep, 2023</p>
+                <div class="carousel-controls">
+                    <div class="carousel-btn prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </div>
+                    <div class="carousel-btn next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
                 </div>
-                <div class="article-preview">
-                    <h4><a href="#">Guía de Star Wars: Galaxy's Edge</a></h4>
-                    <p>20 Sep, 2023</p>
+                <div class="carousel-indicators">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
                 </div>
             </div>
-        </aside>
+        </section>
     </div>
-    
+
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <p>© 2023 DisneyWorld Adventures - Todos los derechos reservados</p>
-            <p>Este blog no está asociado con The Walt Disney Company</p>
-            <ul class="social-links">
-                <li><a href="#">📱</a></li>
-                <li><a href="#">📸</a></li>
-                <li><a href="#">🐦</a></li>
-                <li><a href="#">📺</a></li>
-            </ul>
+            <div class="footer-column">
+                <h3>Magic Disney Blog</h3>
+                <p>Tu fuente confiable para descubrir todo sobre DisneyWorld y planificar el viaje de tus sueños.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Entradas</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Galería</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Categorías</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Categorías</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Parques Temáticos</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Atracciones</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Alojamiento</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Gastronomía</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Consejos de Viaje</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Magic Street, Orlando, FL</p>
+                <p><i class="fas fa-phone"></i> +1 (234) 567-8901</p>
+                <p><i class="fas fa-envelope"></i> info@magicdisneyblog.com</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Magic Disney Blog. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
