@@ -31,18 +31,10 @@ Este proyecto es un sitio web estático donde se comparten experiencias, reseña
 disneyworld-blog/
 ├── index.html        # Página principal
 ├── blog.html         # Listado y detalle de entradas de blog
-├── gallery.html      # Galería de imágenes
+├── scripts.js      # Funciones principales
 ├── css/
 │   ├── style.css     # Estilos generales
-│   └── responsive.css# Estilos responsivos
-├── js/
-│   ├── main.js       # Funciones principales
-│   ├── search.js     # Lógica de búsqueda en entradas
-│   └── gallery.js    # Funcionalidad de la galería
 ├── img/
-│   ├── parks/        # Imágenes de parques
-│   ├── attractions/  # Imágenes de atracciones
-│   └── misc/         # Otras imágenes
 └── README.md
 ```
 
